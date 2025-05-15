@@ -1,0 +1,26 @@
+.card {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ff6060;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  height: 340px;
+
+  &__image {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.8);
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

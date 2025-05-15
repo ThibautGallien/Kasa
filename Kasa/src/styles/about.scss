@@ -1,0 +1,12 @@
+.about {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &__collapses {
+    margin: 40px 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

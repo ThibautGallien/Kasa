@@ -1,0 +1,23 @@
+.error404 {
+  text-align: center;
+  color: #ff6060;
+  padding: 60px 20px;
+
+  &__code {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 36px;
+    margin: 40px 0;
+  }
+
+  &__link {
+    color: black;
+    font-size: 18px;
+    text-decoration: underline;
+    display: inline-block;
+  }
+}

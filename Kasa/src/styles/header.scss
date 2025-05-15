@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+
+  &__logo {
+    height: 68px;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}
