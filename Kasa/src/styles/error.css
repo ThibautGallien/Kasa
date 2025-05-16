@@ -1,0 +1,20 @@
+.error404 {
+  text-align: center;
+  color: #ff6060;
+  padding: 60px 20px;
+}
+.error404__code {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 0;
+}
+.error404__text {
+  font-size: 36px;
+  margin: 40px 0;
+}
+.error404__link {
+  color: black;
+  font-size: 18px;
+  text-decoration: underline;
+  display: inline-block;
+}/*# sourceMappingURL=error.css.map */

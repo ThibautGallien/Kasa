@@ -1,0 +1,14 @@
+.rate {
+  display: flex;
+  gap: 5px;
+
+  &__star {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__star.active {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(2500%)
+      hue-rotate(-15deg) brightness(1);
+  }
+}

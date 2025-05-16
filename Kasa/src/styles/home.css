@@ -1,0 +1,14 @@
+.home {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  border-radius: 25px;
+  margin-top: 40px;
+}/*# sourceMappingURL=home.css.map */
