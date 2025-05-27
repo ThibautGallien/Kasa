@@ -37,8 +37,10 @@ export default function Logement() {
       </div>
 
       <div className="logement__collapses">
-        <Collapse title="Description">{logement.description}</Collapse>
-        <Collapse title="Équipements">
+        <Collapse title="Description" className="collapse--inline">
+          {logement.description}
+        </Collapse>
+        <Collapse title="Équipements" className="collapse--inline">
           <ul>
             {logement.equipments.map((equip, index) => (
               <li key={index}>{equip}</li>

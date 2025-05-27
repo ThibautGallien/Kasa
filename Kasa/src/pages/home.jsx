@@ -8,7 +8,7 @@ export default function Home() {
     <div className="home">
       <BannerHome />
       <div className="home__grid">
-        {logements.slice(0, 6).map((logement) => (
+        {logements.slice(0, 6).map((logement, index) => (
           <Card
             key={logement.id}
             id={logement.id}

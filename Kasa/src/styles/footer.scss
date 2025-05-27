@@ -2,14 +2,34 @@
   background-color: black;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 0; // Supprime le padding horizontal
+  width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 62px 0 58px 0;
+    margin-top: 27px;
+  }
+
+  &__content {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   &__logo {
     height: 40px;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      height: 40px;
+      margin-bottom: 7px;
+    }
   }
 
   &__text {
     font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 }

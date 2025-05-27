@@ -1,40 +1,31 @@
 import BannerAbout from "../components/bannerabout";
-import Collapse from "../components/Collapse";
-import "../styles/About.scss";
+import Collapse from "../components/collapse";
 
 export default function About() {
-  const aboutSections = [
-    {
-      title: "Fiabilité",
-      content:
-        "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
-    },
-    {
-      title: "Respect",
-      content:
-        "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
-    },
-    {
-      title: "Service",
-      content:
-        "La qualité du service est au coeur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance.",
-    },
-    {
-      title: "Sécurité",
-      content:
-        "La sécurité est la priorité de Kaasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
-    },
-  ];
-
   return (
     <div className="about">
       <BannerAbout />
       <div className="about__collapses">
-        {aboutSections.map((section, index) => (
-          <Collapse key={index} title={section.title}>
-            {section.content}
-          </Collapse>
-        ))}
+        <Collapse title="Fiabilité">
+          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
+          photos sont conformes aux logements, et toutes les informations sont
+          régulièrement vérifiées par nos équipes.
+        </Collapse>
+        <Collapse title="Respect">
+          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
+          comportement discriminatoire ou de perturbation du voisinage
+          entraînera une exclusion de notre plateforme.
+        </Collapse>
+        <Collapse title="Service">
+          Nos équipes se tiennent à votre disposition pour vous fournir une
+          expérience parfaite. N'hésitez pas à nous contacter si vous avez la
+          moindre question.
+        </Collapse>
+        <Collapse title="Sécurité">
+          La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
+          pour les voyageurs, chaque logement correspond aux critères de
+          sécurité établis par nos services.
+        </Collapse>
       </div>
     </div>
   );

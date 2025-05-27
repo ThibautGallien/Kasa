@@ -7,7 +7,10 @@ export default function BannerHome() {
       className="banner banner--home"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <h1 className="banner__text">Chez vous, partout et ailleurs</h1>
+      <h1 className="banner__text">
+        Chez vous,
+        <br className="banner__text--mobile-break" /> partout et ailleurs
+      </h1>
     </div>
   );
 }
